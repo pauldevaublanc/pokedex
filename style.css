@@ -1,0 +1,161 @@
+.pokedex {
+  background-image: url('pictures/pokedex-photo.png');
+  position: relative;
+  background-size: 100%;
+  width: 800px;
+  height: 550px;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
+.pokemon-list {
+  position: absolute;
+  top: 154px;
+  left: 30px;
+  height: 335px;
+  width: 330px;
+  overflow-y: scroll;
+}
+
+.pokemon-detail {
+  position: absolute;
+  top: 159px;
+  left: 465px;
+  width: 299px;
+  height: 373px;
+}
+
+
+.poke-info {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.loader {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+
+}
+
+.pokeball {
+  border-radius: 50%;
+  border-top: 60px solid red;
+  border-bottom: 60px solid white;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: relative;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.5)
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border: 2px solid black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.pokemon-item {
+  font-size: 20px;
+  list-style: none;
+  padding: 10px;
+  padding-left: 20px;
+  position: relative;
+  border-bottom: 1px solid gray;
+}
+
+.pokemon-item:last-child {
+  border: none;
+}
+
+.pokemon-item:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-size: 100%;
+  color: white;
+  cursor: pointer;
+}
+
+.pokemon-item:after {
+content: '\2771';
+position: absolute;
+right: 4px;
+}
+
+.pokemon-ul {
+  padding: 5px;
+}
+
+
+.pokemon-attribute {
+  font-size: 12px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.pokemon-attribute:last-child {
+  border-bottom: 1px solid black;
+}
+
+.pokemon-ul-detail{
+  padding: 5px 0px;
+
+  display: inline-block;
+}
+
+
+.glyphicon {
+  font-size: 2em;
+}
+
+.glyphicon-record:before {
+    position: absolute;
+    left: 46px;
+    bottom: -13px;
+    color: black;
+}
+
+
+.poke-name {
+  font-size: 20px;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+
+.photo {
+  border-radius: 5px;
+  padding-left: 4px;
+  display: inline-block;
+  margin-left: 16px;
+}
